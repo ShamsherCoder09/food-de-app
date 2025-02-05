@@ -6,7 +6,7 @@ import { StoreContext } from '../../Context/StoreContext'
 const FoodDisplay = ({category}) => {
 
   const {food_list} = useContext(StoreContext);
-  console.log("food_list._id",  food_list._id);
+  console.log("food_list._id",  food_list?._id);
 
   return (
     <div className='food-display' id='food-display'>
